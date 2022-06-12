@@ -1,0 +1,18 @@
+export var drop1 = [
+  "Photo Video Maker",
+  "Facebook Video Maker",
+  "YouTube Intro Maker",
+  "Instagram Video Maker",
+  "Instagram Story Maker",
+  "Promo Video Maker",
+  "Video Ad Maker",
+  "Marketing Video Maker",
+  "LinkedIn Video Maker",
+  "Business Video Maker",
+  "Ecommerce Video Maker",
+  "Explainer Video Maker",
+  "Slideshow Maker",
+  "Education Video Maker",
+  "Video Editor",
+  "Voiceover",
+];
