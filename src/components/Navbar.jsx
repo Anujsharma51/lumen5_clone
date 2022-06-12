@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import style from "../Styles/Style.module.css";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { drop1 } from "../utily/DropDown";
+import { nanoid } from "nanoid";
 const Navbar = () => {
   const iconStyles = {
     fontSize: "24px",
@@ -50,9 +51,9 @@ const Navbar = () => {
               >
                 {drop1.map((el) => {
                   return (
-                    <>
-                      <Link to="/">{el}</Link>
-                    </>
+                    <Link key={nanoid(3)} to="/">
+                      {el}
+                    </Link>
                   );
                 })}
               </div>
