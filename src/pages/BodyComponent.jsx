@@ -1,44 +1,32 @@
 import React from "react";
+import style from "../Styles/Style.module.css";
 
 const BodyComponent = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          width: "100%",
-          // marginRight: "3rem !important",
-          border: "1px solid red",
-          // marginLeft: "3rem",
-          // marginTop: "3rem",
-        }}
-      >
-        <div
-          style={{
-            width: "50%",
-            marginLeft: "3rem",
-            border: "1px solid black",
-            padding: "2rem",
-            textAlign: "center",
-            fontFamily: "pop",
-          }}
-        >
-          <h1>
-            Video maker built to <br></br>supercharge your<br></br> content
-            strategy
-          </h1>
-          
+      <div className={style.main}>
+        <div className={style.mainTextSection}>
+          <div className={style.inner_first}>
+            <h3 className={style.heading}>
+              <b>Video maker built to supercharge your content strategy</b>
+            </h3>
+            <p className={style.description}>
+              Easily make videos for<br></br>
+              <b>
+                content marketing,<br></br> thought leadership,
+              </b>{" "}
+              and
+              <b> brand awareness</b>
+              in a snap.
+            </p>
+            <button id={style.sign_up_button} className={style.pointer1}>
+              Sign up free
+            </button>
+          </div>
         </div>
-        <div
-          style={{
-            width: "50%",
-            marginRight: "3rem",
-            border: "1px solid black",
-            padding: "2rem",
-          }}
-        >
+        <div className={style.mainImageSection}>
           <img
-            style={{ width: "500px" }}
+            className={style.mainImageSection_image}
             src="	https://storage.googleapis.com/lumen5-site-images/website-assets/image-hero.png"
             alt=""
             srcSet=""
