@@ -16,7 +16,7 @@
   top: 0;
   right: 0;
   left: 0;
-
+z-index: 100;
   padding-right: 3rem !important;
   padding-left: 3rem !important;
 }
@@ -224,3 +224,97 @@ a {
   border: none;
   cursor: pointer;
 }
+/* ////////////////////////////company pages */
+
+
+
+.company{
+
+  display: flex;
+  gap: 1.3%;
+  margin:auto;
+/* padding-left:10%;
+padding-right: 10%; */
+margin:auto;
+width:100%;
+align-items: center;
+text-align:center;
+justify-content:center;
+}
+
+.companyText{
+/* align-items: center; */
+text-align:center;
+/* margin:auto */
+font-weight: 800;
+color: #24282f;
+  line-height: 1.33;
+  letter-spacing: normal;
+  font-family: "Poppins", sans-serif;
+}
+.videoDiv{
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  gap:4%;
+  width: 80%;
+  margin:auto!important;
+  /* padding:2%; */
+  margin-left: 8rem;
+  /* border: 1px solid yellow; */
+  justify-content:center;
+  align-items: center;
+}
+.videoDiv > div{
+  /* width:50px;
+  height:50px; */
+  /* margin-right: 2rem; */
+  
+}
+.innervideoDiv{
+  /* width: 400px; */
+  /* border: 1px solid  red; */
+  position: relative;
+  
+}
+.video{
+  border-radius: 12px;
+  width: 100%;
+    height: 100%;
+    margin:auto
+  }
+  .playIcon{
+  z-index: 3;
+     
+    opacity: .9;
+    /* margin-top: -36px;
+    margin-left: -36px; */
+    /* box-shadow: 0 4px 4px rgb(0 0 0 / 25%); */
+    background: #fff;
+    width: 58px;
+    border-radius: 50%;
+    color:#8e979e;
+    height: 58px;
+    border:none;
+
+}
+.playBTN:hover{
+  text-decoration: none;
+}
+
+.videoUpperText{
+  padding-top:2%;
+  text-align: center;
+  margin-bottom:2%;
+  /* font-weight: 700; */
+    line-height: 1.35;
+    letter-spacing: normal;
+    font-family: "Poppins", sans-serif;
+
+}
+.videoUpperText p{
+  /* ma */
+  margin-top:-10px;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/* body component 2 start */
