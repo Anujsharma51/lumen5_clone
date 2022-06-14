@@ -1,13 +1,14 @@
 import React from "react";
-import Body from "./Body";
+
 import Navbar from "../components/Navbar";
+import BodyComponent from "./BodyComponent";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
 
-      <Body />
+      <BodyComponent />
     </div>
   );
 };
