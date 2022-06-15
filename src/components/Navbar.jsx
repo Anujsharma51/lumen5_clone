@@ -1,10 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "../Styles/Style.module.css";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { drop1 } from "../utily/DropDown";
 import { nanoid } from "nanoid";
 const Navbar = () => {
+  const [navSize, setnavSize] = useState("100px");
+  const [navColor, setnavColor] = useState("#fafafb");
+  const [navimg, setnavImg] = useState("");
+  const [logo, setlogo] = useState("");
+  const [btn, setBtn] = useState("0.8571428571rem 0.8571428571rem");
+  const listenScrollEvent = () => {
+    window.scrollY > 3 ? setnavSize("70px") : setnavSize("90px");
+    window.scrollY > 3 ? setnavImg("-7px") : setnavImg("0px");
+    window.scrollY > 3
+      ? setBtn("0.3571428571rem 0.3571428571rem")
+      : setBtn("0.8571428571rem 0.8571428571rem");
+    window.scrollY > 3 ? setlogo("-7px") : setlogo("0px");
+    window.scrollY === 0 ? setnavColor("#fafafb") : setnavColor("white");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", listenScrollEvent);
+    return () => {
+      window.removeEventListener("scroll", listenScrollEvent);
+    };
+  }, [navColor]);
+
   const iconStyles = {
     fontSize: "24px",
     justifyContent: "center",
@@ -19,10 +40,18 @@ const Navbar = () => {
     setCreate(!create);
   };
   return (
-    <div id={style.Navbar}>
+    <div
+      style={{
+        backgroundColor: navColor,
+        height: navSize,
+        transition: "all .5s",
+      }}
+      id={style.Navbar}
+    >
       <div>
-        <Link to="/">
+        <Link smooth spy to="/">
           <img
+            style={{ marginTop: navimg }}
             className={style.bar_logo}
             src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png"
             alt=""
@@ -34,7 +63,9 @@ const Navbar = () => {
         <ul className={style.navbar_nar}>
           <div className={style.icon_div} onClick={handleOpen}>
             <li>
-              <Link to="">Create</Link>
+              <Link smooth spy to="">
+                Create
+              </Link>
 
               <div
                 className={style.drop1}
@@ -51,7 +82,7 @@ const Navbar = () => {
               >
                 {drop1.map((el) => {
                   return (
-                    <Link key={nanoid(3)} to="/">
+                    <Link smooth spy key={nanoid(3)} to="/">
                       {el}
                     </Link>
                   );
@@ -63,28 +94,46 @@ const Navbar = () => {
 
           <div>
             <li>
-              <Link to="/pricing">Pricing</Link>
+              <Link smooth spy to="/pricing">
+                Pricing
+              </Link>
             </li>
           </div>
           <div>
             <li>
-              <Link to="/pricing">Enterprise</Link>
+              <Link smooth spy to="/pricing">
+                Enterprise
+              </Link>
             </li>
           </div>
           <div>
             <li>
-              <Link to="/pricing">Case studies</Link>
+              <Link smooth spy to="/pricing">
+                Case studies
+              </Link>
             </li>
           </div>
           <div className={style.icon_div}>
             <li>
-              <Link to="/pricing">Learn</Link>
+              <Link smooth spy to="/pricing">
+                Learn
+              </Link>
             </li>
             <RiArrowDropDownFill style={iconStyles} />
           </div>
 
-          <button className={style.login_btn}>Login</button>
-          <button className={style.sign_btn}>Sign up</button>
+          <button
+            style={{ marginTop: logo, padding: btn }}
+            className={style.login_btn}
+          >
+            Login
+          </button>
+          <button
+            style={{ marginTop: logo, padding: btn }}
+            className={style.sign_btn}
+          >
+            Sign up
+          </button>
         </ul>
       </div>
     </div>

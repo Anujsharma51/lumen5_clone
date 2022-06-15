@@ -1,22 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "../Styles/Style.module.css";
-// BsDiscord;
 import { BsDiscord } from "react-icons/bs";
-const BodyComponent2 = () => {
+const BodyComponent = (props) => {
+  //   console.log("props:", props.value);
   return (
-    <div className={style.full2}>
-      <div className={style.main2}>
-        <div className={style.mainImageSection2}>
-          <img
-            className={style.mainImageSection_image2}
-            src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-content.png"
-            alt=""
-            srcSet=""
-          />
-        </div>
-
-        <div className={style.mainTextSection2}>
+    <>
+      <div
+        className={style.main}
+        style={{ backgroundColor: "white", marginTop: "4%" }}
+      >
+        <div className={style.mainTextSection2} style={{ marginLeft: "9rem" }}>
           <BsDiscord
             style={{
               fontSize: "4rem",
@@ -27,9 +21,7 @@ const BodyComponent2 = () => {
             }}
           />
           <h3 className={style.heading2}>
-            <b>
-              Transform blog posts<br></br> into videos with A.I.
-            </b>
+            <b>Content library with millions of stock photos & videos</b>
           </h3>
           <div className={style.inner_first2}>
             <p className={style.description2}>
@@ -44,33 +36,45 @@ const BodyComponent2 = () => {
           </div>
           <div className={style.userProfile}>
             <p>
-              “Lumen5 has enabled us to create more videos and drive more
-              traffic, while having more time to invest in other projects.”
+              “We promoted our downloadable study on top PPC skills for 2019 on
+              social media using a short video created in Lumen5 in just 30
+              minutes, and decreased cost per download by 5x!”
             </p>
           </div>
           <div className={style.profile}>
             <div>
               <img
                 style={{ width: "90%", borderRadius: "50%" }}
-                src="https://storage.googleapis.com/lumen5-site-images/website-assets/image-drew-s.jpg"
+                src="	https://storage.googleapis.com/lumen5-site-images/website-assets/image-julia-o.jpg"
                 alt=""
                 srcSet=""
               />
             </div>
             <div className={style.innerUser}>
-              <p>Drew Sykes, Social Media Director</p>
+              <p>
+                <b>Julia Olennikova,</b>, Product Marketing<br></br>
+                Manager
+              </p>
               <img
                 className={style.img1}
-                src="	https://storage.googleapis.com/lumen5-site-images/website-assets/logo-nc-red.png"
+                src="			https://storage.googleapis.com/lumen5-site-images/website-assets/logo-semrush.png"
                 alt=""
                 srcset=""
               />
             </div>
           </div>
         </div>
+        <div style={{ marginTop: "15%" }} className={style.mainImageSection}>
+          <img
+            className={style.mainImageSection_image}
+            src={props.value}
+            alt=""
+            srcSet=""
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default BodyComponent2;
+export default BodyComponent;

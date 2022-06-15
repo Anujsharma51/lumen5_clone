@@ -4,7 +4,7 @@ import style from "../Styles/Style.module.css";
 const BodyComponent = () => {
   return (
     <>
-      <div className={style.main}>
+      <div className={style.main} style={{ backgroundColor: "#fafafb" }}>
         <div className={style.mainTextSection}>
           <div className={style.inner_first}>
             <h3 className={style.heading}>
