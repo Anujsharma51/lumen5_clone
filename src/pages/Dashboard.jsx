@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import styles from "../Styles/signup.module.css";
 import { videos } from "../utily/videoTamplate";
 import DashboardVideo from "./DashboardVideo";
@@ -10,6 +11,11 @@ const Dashboard = () => {
 
   const [show, setShow] = useState(false);
   const [data, setData] = useState(videos);
+  const navigate = useNavigate();
+  const GotoUpgrade = () => {
+    navigate("/upgrade");
+  };
+  const getName = localStorage.getItem("name");
   return (
     <>
       <div className={styles.navbar}>
@@ -23,8 +29,22 @@ const Dashboard = () => {
         <div className={styles.RightDiv}>
           <input type="text" className={styles.inp} />
           <button className={styles.upgrade}>UPGRADE</button>
-
-          <div>{name}</div>
+          <div></div>
+          <div
+            style={{
+              //   border: "1px solid  #24282f",
+              width: "60px",
+              borderRadius: "50%",
+              textAlign: "center",
+              marginLeft: "4px",
+              display: "flex",
+              justifyContent: "center",
+              lineHeight: "2",
+              backgroundColor: "#dddee6",
+            }}
+          >
+            {name === "" ? getName[0] : name[0]}
+          </div>
         </div>
       </div>
       <div className={styles.bodydivs}>
@@ -67,6 +87,22 @@ const Dashboard = () => {
           <div className={styles.rightDivItem}>
             <div className={styles.block}>
               <div className={styles.inblock}>
+                <div
+                  onClick={GotoUpgrade}
+                  style={{
+                    textAlign: "center",
+                    height: "200px",
+                    width: "300px",
+                    backgroundColor: "#5846f6",
+                    borderRadius: "2px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontSize: "40px",
+                  }}
+                >
+                  New Video +
+                </div>
                 {data.map((el, i) => {
                   return (
                     <DashboardVideo key={i} value={{ setShow, show, el }} />

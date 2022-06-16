@@ -182,15 +182,26 @@ color: #4a68ad;
 }
 .RightDiv{
     display:flex;
-    margin-right: 2rem;;
+    /* margin-right: 2rem; */
+    /* row-gap: 4%; */
+    /* width:40%; */
+    /* gap:4%; */
+
+    /* text-align:center; */
+    /* margin:auto; */
+    /* align-items: center; */
+    /* border: 1px solid black; */
 }
-.logoDiv{
+.RightDiv div{
 
 }
+/* .logoDiv{
+
+} */
 .upgrade{
     border: 1px solid #5846f6;
         color: #5846f6;
-        min-width: 70px;
+        /* min-width: 70px; */
         border-radius: 100px;
         text-transform: none;
         font-weight: 200;
@@ -203,6 +214,8 @@ color: #4a68ad;
         line-height: 1.5;
         cursor: pointer;
         background-color: transparent;
+        margin-left: 3%;
+        margin-right: 3%;
 }
 
 .bodyLeftDiv{
@@ -235,7 +248,7 @@ color: #4a68ad;
 .bodyRightDivFirst{
     display: flex;
     justify-content:space-between;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         text-align: center;
         align-items: center;
         margin-top: 30px;;
@@ -307,129 +320,150 @@ color: #4a68ad;
 .inblock>div>video:focus {
     border: none;
 }
-/* ///////////////////////////////////////dashboard navbar/ */
+
+
+/* .............upgrade page  */
+
+.upgradeTop{
+    text-align: center;
+    /* cursor: pointer;
+     */
+   
+}
+/* //////////////////////// */
+
+
+
+/* ......................pricing page */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
-    margin: 0%;
-    padding: 0%;
+    background-color: #30336b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+} */
+
+.Innerprice{
+    /* border:1px solid black; */
+    /* max-width: 160px; */
+    /* padding-left:1.5%; */
+    /* height: 300px; */
+    margin: 10px;
+        width: 223px;
+        border: 1px solid #dddee6;
+        /* box-sizing: border-box; */
+        border-radius: 10px;
+        /* display: flex; */
+            /* grid-template-columns: 30% 30%; */
+        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+
+        font-family: "Poppins", sans-serif;
+        padding-right: 20px;
+}
+
+.Innerprice h5{
+    font-weight: 600;
+        font-size: 21px;
+        line-height: 22px;
+            color: #24282f;
+            
+                text-align: left;
+                
+}
+.Innerprice button{
+    /* background-color: #9b90fa; */
+    border:none;
+    padding:6%;
+    width: 90%;
+    margin:auto;
+    text-align:center;
+    margin-top:30px;
+    border-color: #5846f6;
+    cursor: pointer;
+        background-color: #5846f6;
+        color:#fff;
+        opacity: .6;
+            box-shadow: none;
+            min-width: 70px;
+            text-transform: none;
+                font-weight: 400;
+                border-radius: 50rem !important;
+}
+/* .Innerprice{
+    display:grid;
+    grid-template-columns:30% 30%;
+} */
+.Innerprice button:hover{
+    background-color:#210be2;
+}
+.priceMAin{
+    width:100%;
+    /* margin-right: 4%; */
+    display: grid;
+    gap: 4%;
+    margin:auto;
+grid-template-columns: 22% 22% 22% 22%
+}
+
+/* payment sdpage start.............. */
+
+.mainPayments{
+    /* border: 1px solid black; */
+    width:50%;
+    text-align: center;
+    background:rgb(255 255 255);
+    box-shadow: 15px 0 30px 0 rgb(0 0 0 / 18%);
+    height:100vh;
     font-family: "Poppins", sans-serif;
 }
 
-.afterNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* height: 7vh; */
-}
-
-.afterNav>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.pricingPayment{
+    display: grid;
+    grid-template-columns:auto auto;
+    justify-content:space-evenly;
+    text-align: center;
+    gap: 10%;
     align-items: center;
 }
-
-.logo {
-    width: 110px;
-    margin-right: 120px;
-    margin-left: 22px;
+.pricingPayment div{
+margin-top: 20px;
+    /* border:1px solid black; */
 }
 
-.menu {
-    width: 20px;
-    height: 20px;
+.onePage{
+    display:flex;
 }
 
-.search {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.555);
-}
-
-.search>button {
-    border: none;
-    background-color: white;
-    outline: none;
-}
-
-.search>input {
-    border: none;
-    outline: none;
-}
-
-#searchbtn {
-    width: 15px;
-    height: 15px;
-    background-color: white;
-}
-
-#upgradebtn {
-    width: 100px;
-    height: 40px;
-    margin-left: 30px;
-    border: 1px solid rgb(88, 70, 246);
-    border-radius: 50px;
-    background-color: white;
-    font-size: 15px;
-    color: rgb(88, 70, 246);
-}
-
-#upgradebtn:hover {
-    background-color: rgb(88, 70, 246);
-    color: white;
-}
-
-#logindetails {
-    display: flex;
-    align-items: center;
-    width: 50px;
-    height: 5vh;
-    border-left: 1px solid black;
-    margin-left: 20px;
-}
-
-.userimg {
-    width: 22px;
-    margin-left: 30px;
-    margin-right: 15px;
-}
-
-.userimg:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-    /* color: blue; */
-}
-
-.subdiv {
-    margin-right: 100px;
+.inputSection{
+    width:50%
 }
 
 
-.logout {
-    height: auto;
-    width: 200px;
-    position: absolute;
-    right: 15px;
-    top: 60px;
-    margin: 2px 0 0;
-    border: 1px solid rgba(0, 0, 0, 0.384);
-    background-color: FFFFFF;
-    transition: all 1000ms ease-in-out;
-    opacity: 1;
-    box-shadow: 1px 4px 10px 2px #888888;
-    background-clip: padding-box;
-}
+/* //////////////////////PAYMENT RIGHTSIDE CSS */
 
-.hidee {
-    transition: all 600ms ease-in-out;
-    opacity: 0.00;
+
+
+.inputSection{
+width:fit-content;
+border:1px solid black;
+/* padding:4%; */
 
 }
+#firstinp{
+    /* width:400px */
+    padding:3%;
+    width: 300px;margin:auto;
+    text-align:center;
+    align-items:center;
 
-.logout>p {
-    margin-left: 25px;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-}
-
-#logoutp {
-    margin-left: 25px;
 }
