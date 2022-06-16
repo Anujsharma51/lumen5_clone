@@ -29,7 +29,7 @@ const VideoPlay = (props) => {
             setShow(false);
           }}
           onMouseOut={(event) => {
-            setShow(true);
+            setShow(true);  
             event.target.pause();
           }}
           className={style.video}

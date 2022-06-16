@@ -6,10 +6,10 @@
   transition: all 0.5s ease;
 /* height:60px; */
 /* border:1px solid red; */
-  /* transition-property: all;
+  transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  transition-delay: 0s; */
+  transition-delay: .5s;
   justify-content: space-between;
 
   display: flex !important;
@@ -464,11 +464,10 @@ margin-top:8%;
 
     box-sizing: border-box;
 
-    transition: 1s;
-    scroll-behavior: smooth;
   }
- #slide{
-   
+  #slide{
+    
+ 
     width:790px;
     height:400px;
  
@@ -480,6 +479,8 @@ margin-top:8%;
 
 .carousalBTN2,
 .carousalBTN1 {
+    transition: 1s;
+      scroll-behavior: smooth;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -543,6 +544,9 @@ max-width: 120px;
 }
 .footerDive2 div{
   width:40%;
+}
+.footerDive2 p {
+ cursor: pointer;
 }
 
 .footerEnd{

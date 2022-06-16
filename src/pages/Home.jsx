@@ -8,6 +8,7 @@ import BodyComponent from "./BodyComponent";
 import BodyComponent2 from "./BodyComponent2";
 import BodyComponent3 from "./BodyComponent3";
 import Companys from "./Companys";
+import { SignUp } from "./SignUp";
 
 const Home = () => {
   return (

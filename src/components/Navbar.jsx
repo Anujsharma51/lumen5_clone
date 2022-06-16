@@ -121,19 +121,22 @@ const Navbar = () => {
             </li>
             <RiArrowDropDownFill style={iconStyles} />
           </div>
-
-          <button
-            style={{ marginTop: logo, padding: btn }}
-            className={style.login_btn}
-          >
-            Login
-          </button>
-          <button
-            style={{ marginTop: logo, padding: btn }}
-            className={style.sign_btn}
-          >
-            Sign up
-          </button>
+          <Link to="signIN">
+            <button
+              style={{ marginTop: logo, padding: btn }}
+              className={style.login_btn}
+            >
+              Login
+            </button>
+          </Link>
+          <Link to="/signUp">
+            <button
+              style={{ marginTop: logo, padding: btn }}
+              className={style.sign_btn}
+            >
+              Sign up
+            </button>
+          </Link>
         </ul>
       </div>
     </div>

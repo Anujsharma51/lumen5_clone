@@ -1,0 +1,101 @@
+.mainSignUP {
+  display: flex;
+}
+.signupdiv1 {
+  background-image: url("https://storage.googleapis.com/lumen5-site-images/website-assets/login-bg3.png");
+
+  width: 33%;
+  height: 100vh;
+  object-fit: cover;
+  color: #fff;
+}
+
+.innersignupdiv1 img {
+  object-fit: cover;
+}
+.leftDivText h1 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0 0 30px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
+  margin-left: 30px;
+}
+
+.leftDivText h2 {
+  /* font-size: 50px;
+    font-weight: 500; */
+  margin: 0 0 30px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  font-family: "Poppins", sans-serif;
+  /* border: 1px solid red; */
+  margin-left: 30px;
+}
+.formDiv {
+  padding: 10%;
+  margin-left: 6rem;
+  width: 70%;
+
+  /* border: 1px solid black; */
+}
+.inp {
+  width: 500px;
+  /* background-color:red; */
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  /* padding-bottom:1rem; */
+}
+.inp input {
+  width: 300px;
+
+  border: none;
+  padding: 10px;
+  padding-bottom: 1rem;
+
+  /* background-color: red; */
+}
+
+.inp label {
+  word-wrap: none;
+  text-align: left;
+}
+.inp input[type="text"],
+input[type="password"] {
+  outline: none;
+}
+.condistion {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  /* font-size: 1rem; */
+  /* font-weight: 400;
+        line-height: 1.5;
+        color: #24282f;
+        text-align: left; */
+}
+
+.submit {
+  width: 30rem;
+  margin: auto;
+  padding: 0.8571428571rem 0.8571428571rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #5846f6;
+  border-radius: 30px;
+  border-color: #5846f6;
+  text-align: center;
+
+  font-family: inherit;
+  outline: 0;
+  vertical-align: middle;
+  text-align:center;
+  align-items:center;
+  margin-left: 2rem;
+  margin-top:9%;
+}
+
+

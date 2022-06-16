@@ -8,7 +8,6 @@ const Carousal = () => {
   //   let i = 0;
 
   const [num, setNumber] = useState(0);
-  console.log(num);
 
   return (
     <>
@@ -25,7 +24,9 @@ const Carousal = () => {
         >
           <GrFormPrevious />
         </button>
+
         <img id={style.slide} src={img[num]} alt="" srcSet="" />
+
         <button
           className={style.carousalBTN2}
           onClick={() => {
