@@ -26,7 +26,7 @@ export const SignUp = () => {
       email,
       password,
     };
-    fetch("http://localhost:8080/user", {
+    fetch("https://stormy-journey-32606.herokuapp.com/user", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import style from "../Styles/Style.module.css";
 
 const BodyComponent = () => {
+  const navigate = useNavigate();
+  const home = () => {
+    navigate("/signUp");
+  };
   return (
     <>
       <div className={style.main} style={{ backgroundColor: "#fafafb" }}>
@@ -19,7 +24,11 @@ const BodyComponent = () => {
               <b> brand awareness</b>
               in a snap.
             </p>
-            <button id={style.sign_up_button} className={style.pointer1}>
+            <button
+              id={style.sign_up_button}
+              className={style.pointer1}
+              onClick={home}
+            >
               Sign up free
             </button>
           </div>

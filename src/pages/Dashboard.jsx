@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+
 import styles from "../Styles/signup.module.css";
 import { videos } from "../utily/videoTamplate";
+
 import DashboardVideo from "./DashboardVideo";
+
 const Dashboard = () => {
   // const name=
   const name = useSelector((state) => state.name.name);
@@ -16,6 +19,7 @@ const Dashboard = () => {
     navigate("/upgrade");
   };
   const getName = localStorage.getItem("name");
+
   return (
     <>
       <div className={styles.navbar}>

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import styles from "../Styles/signup.module.css";
 import { BiShow } from "react-icons/bi";
 import { GrHide } from "react-icons/gr";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const companysLogo = [
   "https://storage.googleapis.com/lumen5-site-images/website-assets/logo-seimens-white.png",
@@ -24,8 +24,15 @@ export const Signin = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isSign, setSign] = useState(false);
+
+  const auth = useSelector((state) => state.name.auth);
+  console.log("auth:", auth);
+  const getAuth = localStorage.getItem("auth");
+  // https://stormy-journey-32606.herokuapp.com/user
   const handleSignin = () => {
-    fetch(`http://localhost:8080/user?email=${email}&password=${password}`)
+    fetch(
+      `https://stormy-journey-32606.herokuapp.com/user?email=${email}&password=${password}`
+    )
       .then((res) => res.json())
       .then(
         (data) => {
@@ -63,6 +70,10 @@ export const Signin = () => {
         sertError("Your email or password was incorrect");
       });
   };
+
+  if (auth) {
+    return <Navigate to="/dashboard" />;
+  }
   return (
     <>
       {isSign === true ? navigate("/dashboard") : ""}

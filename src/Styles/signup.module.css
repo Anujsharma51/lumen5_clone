@@ -227,13 +227,14 @@ color: #4a68ad;
         width: 18%;
         box-sizing: border-box;
        /* background-color: red; */
-       border-right: 1px solid black;
+       /* border-right: 1px solid black; */
        background-color:white;
        height: 89.5vh;
 
 }
 .bodyLeftDiv div{
 /* background-color:green; */
+margin-left: 10px;
 }
 .bodydivs{
     display: flex;
@@ -251,7 +252,10 @@ color: #4a68ad;
         /* border: 1px solid red; */
         text-align: center;
         align-items: center;
-        margin-top: 30px;;
+        margin-top: 30px;
+    margin: 25px 50px 0px 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
 /* bodyRightDiv */
 
@@ -312,7 +316,7 @@ color: #4a68ad;
 
 .inblock>div>video {
     width: 101%;
-    height: 102%;
+    height: 70%;
     border-radius: 5px;
     box-shadow: 1px 1px 2px 2px #999;
 }
@@ -466,4 +470,295 @@ border:1px solid black;
     text-align:center;
     align-items:center;
 
+}
+/* //////////////////////////new way */
+.main_bx {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Helvetica Neue, Ubuntu, sans-serif;
+    font-size: 16px;
+    color: rgba(26, 26, 26, 0.9);
+    color: #1a1a1a80;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main_bx {
+    display: flex;
+    justify-content: center;
+    /* border:2px solid black; */
+    /* width:90%; */
+    gap: 5%;
+    margin-top: 40px;
+}
+
+.leftMain_Bx {
+    margin-top: 03px;
+    box-sizing: border-box;
+    height: 449px;
+    width: 380px;
+    /* border:2px solid black; */
+    /* margin-left:15%; */
+}
+
+.pic {
+    width: 105.65px;
+    height: 27.99px;
+    margin-bottom: 10px;
+}
+
+.clr {
+    color: rgba(26, 26, 26, 0.9);
+    font-size: 36px;
+    margin-top: -20px;
+}
+
+.topStyle {
+    font-weight: 600;
+}
+
+.span1 {
+    display: inline-block;
+    color: #1a1a1a80;
+    font-size: 14px;
+    /* box-sizing: border-box; */
+    width: 50px;
+    height: 45px;
+    /* border:2px solid black; */
+}
+
+.opt {
+    height: 41.6px;
+    width: 372px;
+    margin-bottom: 30px;
+}
+
+.opt1 {
+    display: flex;
+    height: 20.8px;
+    width: 372px;
+    color: #1a1a1a80;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.span2 {
+    color: rgba(26, 26, 26, 0.9);
+    font-size: 14px;
+    font-weight: 500;
+    /* margin-left:150px; */
+}
+
+.Pstyles {
+    border: 1px solid black;
+    border-style: none;
+    width: 5px;
+    background-color: #f9f9f9;
+}
+
+.rightMain_Bx {
+    box-sizing: border-box;
+    /* border:2px solid brown; */
+    /* margin:auto; */
+    height: 723.2px;
+    width: 375px;
+    color: #1a1a1ab3;
+}
+
+.clrBlck {
+    color: rgba(26, 26, 26, 0.9);
+    font-size: 13px;
+    
+}
+
+.emailSet_Bx {
+    border-radius: 07px;
+    background-color: #f7f7f7;
+    height: 36px;
+    width: 350px;
+    /* border: 2px solid #1a1a1ab3; */
+    margin-top: 12px;
+    padding-left: 12px;
+        /* box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important; */
+    font-size: 14px;
+    /* margin-bottom:20px; */
+}
+
+.NameCard {
+    margin-bottom: 15px;
+}
+
+.emailSetDiv {
+    display: flex;
+    margin-top: 08px;
+}
+
+.mainInp_boxx {
+    /* border:2px solid salmon; */
+    height: 112.8px;
+    width: 396px;
+    /* margin-bottom:20px; */
+}
+
+.inpflex_box {
+    display: flex;
+    /* margin-bottom: 20px; */
+        /* box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important; */
+}.cardInpTop {
+    border-top-left-radius: 6px;
+    /* box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important; */
+    /* border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px; */
+    border-top-right-radius: 6px;
+}
+
+.inpBx_size {
+    height: 30px;
+    width: 350px;
+    padding-left: 12px;
+    /* padding:8px 12px; */
+        /* box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important; */
+    /* border-bottom-left-radius: 6px; */
+}
+
+
+.cardInpBtm {
+    /* width: 94%; */
+    width: 354px;
+    border-bottom-left-radius: 6px;
+    /* padding-left: 12px; */
+}
+
+.inpBx_size1 {
+    height: 30px;
+        /* box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important; */
+    width: 167px;
+    padding-left: 12px;
+    /* border-bottom-left-radius: 6px; */
+    /* padding:8px 12px; */
+   /* border-top-right-radius:6px; */
+   border-bottom-right-radius:6px;
+    border-top: none;
+}
+
+.slctStyle {
+    width: 368px;
+    font-size: 16px;
+    border-top-left-radius: 6px;
+        box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important;
+    /* border-top:1px solid black; */
+    border: none;
+}
+
+.uDropDwn {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn {
+    height: 40px;
+    width: 368px;
+    background-color: rgb(88, 70, 246);
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.btnC {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    
+    width: 80px;
+}
+input{
+    /* background-color:red !important;    */
+    border:none !important;
+    box-shadow: 0 0 0 1px #e0e0e0, 0 2px 4px 0 rgb(0 0 0 / 7%), 0 1px 1.5px 0 rgb(0 0 0 / 5%) !important;
+}
+
+input:focus {
+    outline: none !important;
+    /* border: 1px solid red !important; */
+    box-shadow: 0 0 10px #719ECE !important;
+}
+
+/* ............otp page */
+
+.otp-input input {
+    border: 0px solid rgba(209, 213, 219, 1);
+    background: #f7f5f5;
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.react-tel-input {
+    width: 100%;
+}
+
+.react-tel-input input[type="tel"] {
+    width: 100% !important;
+    border: 1px solid rgba(209, 213, 219, 1) !important;
+}
+
+.flag-dropdown {
+    background: transparent !important;
+}
+
+
+/* newOtp box */
+
+.mainOTp{
+    /* min-width: 360px; */
+    width:30%;
+        padding: 2rem;
+        box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+        border-radius: 4px;
+        background: white;
+        margin: auto;
+}
+.innerOTP{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* padding:3px; */
+        margin:13%;
+margin:auto;    
+}
+.inpDiv{
+        display: flex;
+            flex-wrap: wrap;
+               font-family: 'Lato', sans-serif;
+                    font-size: 16px;;
+                    font-size: 16px;
+                    margin:auto;
+/* border: 1px solid black; */
+justify-content:center;
+}
+.otpinp{
+    width: 3rem !important;
+        height: 3rem;
+        margin: 0 1rem;
+        font-size: 2rem;
+        border-radius: 4px;
+}
+.otpbtn{
+        background-color: #3273dc;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 1rem;
+            text-align: center;
+        
+}
+
+.btnOTPdiv{
+    display: flex;
+ 
+    justify-content:space-around
+}
+input[type=number] {
+    -moz-appearance: textfield;
 }
